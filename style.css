@@ -1,1 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --light-pink: #F8BFBF
+    --charcoal: #423A3A
+    --dusty-pink: #CE9898
+    --salmon-pink: #EE8B8B
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
