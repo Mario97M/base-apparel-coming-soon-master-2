@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
-
-:root {
-    --light-pink: #F8BFBF
-    --charcoal: #423A3A
-    --dusty-pink: #CE9898
-    --salmon-pink: #EE8B8B
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    display: block;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --light-pink: #f8bfbf;
+  --charcoal: #423a3a;
+  --dusty-pink: #ce9898;
+  --salmon-pink: #ee8b8b;
 }
 
+
+
 .hidden {
-    display: none;
+  display: none;
 }
