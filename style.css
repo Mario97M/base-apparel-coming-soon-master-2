@@ -3,7 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 :root {
   --light-pink: #f8bfbf;
   --charcoal: #423a3a;
@@ -11,8 +13,78 @@
   --salmon-pink: #ee8b8b;
 }
 
-
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f4e8e8;
+}
 
 .hidden {
   display: none;
+}
+
+.logo {
+  margin: 30px;
+}
+
+.image-mobile img {
+  width: 100%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  letter-spacing: 18px;
+  margin: 1em 0 0.8em 0;
+}
+
+.content h1 span {
+  font-weight: 300;
+  color: var(--dusty-pink);
+}
+
+.content {
+  text-align: center;
+  max-width: 25em;
+  margin: auto;
+}
+
+.content p {
+  line-height: 25px;
+  color: var(--dusty-pink);
+}
+
+.input-area {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.input-area input {
+  padding: 10px;
+  border-radius: 20px;
+  width: 20em;
+  border: 1px solid var(--light-pink);
+}
+
+.input-area input::placeholder {
+  color: var(--light-pink);
+}
+
+.input-area input:focus {
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px;
+  border-radius: 20px;
+  width: 4em;
+  border: none;
+  color: white;
+  background-color: var(--salmon-pink);
+  cursor: pointer;
+}
+
+.input-area button:hover {
+  background-color: var(--light-pink);
 }
