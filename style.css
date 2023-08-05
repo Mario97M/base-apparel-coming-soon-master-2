@@ -18,16 +18,21 @@ body {
   background-color: #f4e8e8;
 }
 
-.hidden {
+.image-desktop {
   display: none;
 }
 
 .logo {
   margin: 30px;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
 }
 
 .image-mobile img {
   width: 100%;
+  margin-top: 7em;
 }
 
 .content h1 {
@@ -57,7 +62,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .input-area input {
@@ -87,4 +92,57 @@ body {
 
 .input-area button:hover {
   background-color: var(--light-pink);
+}
+
+@media all and (min-width: 610px) {
+  .image-mobile {
+    width: 100%;
+    text-align: center;
+  }
+  .image-mobile img {
+    width: 38em;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .desktop-container {
+    display: flex;
+  }
+
+  .image-desktop {
+    display: block;
+  }
+
+  .image-desktop img {
+    height: 100vh;
+  }
+
+  .image-mobile {
+    display: none;
+  }
+
+  .content {
+    text-align: left;
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+    margin: auto;
+  }
+
+  .content h1 {
+    font-size: 50px;
+    line-height: 65px;
+  }
+
+  .content p {
+    line-height: 30px;
+  }
+
+  .input-area {
+    width: fit-content;
+  }
+
+  .input-area input {
+    width: 25em;
+  }
 }
